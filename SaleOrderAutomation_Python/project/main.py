@@ -2,6 +2,7 @@ from scripts.dms_download import download_from_dms
 from scripts.file_handler import move_files_to_input
 from scripts.file_handler import clear_folder, move_files_to_input,rename_downloaded_files
 from config.config import DOWNLOAD_DIR, INPUT_DIR, OUTPUT_DIR
+from scripts.merlin_api import upload_to_merlin
 # from scripts.transform import read_excel_file,validate_mandatory_columns
 # from scripts.transform import merge_customer_city
 # from scripts.transform import add_total_price
@@ -96,6 +97,10 @@ def main():
 
     print("✅ Step 5 completed – Payload ready for API upload")
     print(merlin_payload)
+
+    upload_response = upload_to_merlin(merlin_payload)
+
+    print("✅ Step 7 completed – Data uploaded to Merlin")
     # Step 4 → transform
     # Step 5 → API upload
     # Step 6 → email

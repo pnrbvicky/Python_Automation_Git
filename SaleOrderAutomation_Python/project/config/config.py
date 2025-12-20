@@ -18,7 +18,8 @@ OUTPUT_DIR = os.path.join(BASE_DIR, "output")
 LOG_DIR = os.path.join(BASE_DIR, "logs")
 
 # API
-MERLIN_API_URL = "https://merlin-api/upload"
+# MERLIN_API_URL = "https://merlin-api/upload"
+MERLIN_API_URL = "http://127.0.0.1:6000/upload"
 
 # Email
 SMTP_SERVER = "smtp.gmail.com"
