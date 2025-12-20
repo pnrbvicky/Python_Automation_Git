@@ -1,5 +1,6 @@
 import os
 import pandas as pd
+from datetime import datetime
 
 def read_excel_file(file_path):
     print(f"🔍 Checking file: {file_path}")
@@ -68,3 +69,102 @@ def add_total_price(df):
     print("✅ total_price column created")
 
     return df
+
+def map_to_merlin_format(sales_df, customer_df):
+    """
+    Map raw sales + customer data into Merlin upload format
+    """
+
+    merlin_df = sales_df.copy()
+
+    # 🔹 Column mapping dictionary
+    column_mapping = {
+        "SO_NO": "merlin_order_no",
+        "SKU_ID": "merlin_sku",
+        "QTY": "merlin_qty",
+        "UNIT_PRICE": "merlin_unit_price",
+        "retailer_id": "merlin_retailer_id",
+        "total_price": "merlin_total_price",
+        "city": "merlin_city"
+    }
+
+    # Rename columns
+    merlin_df.rename(columns=column_mapping, inplace=True)
+
+    # # 🔹 VLOOKUP equivalent → add city
+    # merlin_df = merlin_df.merge(
+    #     customer_df[["retailer_id", "city"]],
+    #     on="retailer_id",
+    #     how="left"
+    # )
+
+    # # Rename city to Merlin format
+    # merlin_df.rename(columns={"city": "merlin_city"}, inplace=True)
+
+    print("✅ Mapped data to Merlin format")
+
+    return merlin_df
+
+def clean_merlin_dtypes(df):
+    """
+    Ensure correct datatypes for Merlin upload
+    """
+
+    df["merlin_qty"] = df["merlin_qty"].astype(int)
+    df["merlin_unit_price"] = df["merlin_unit_price"].astype(float)
+    df["merlin_total_price"] = df["merlin_total_price"].astype(float)
+
+    df["merlin_order_no"] = df["merlin_order_no"].astype(str)
+    df["merlin_city"] = df["merlin_city"].astype(str)
+
+    print("✅ Merlin datatypes cleaned")
+
+    return df
+
+
+
+def write_merlin_output(merlin_df, output_dir):
+    """
+    Write Merlin formatted DataFrame to Excel
+    """
+
+    os.makedirs(output_dir, exist_ok=True)
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    output_file = os.path.join(output_dir, f"merlin_upload_{timestamp}.xlsx")
+
+    # output_file = os.path.join(output_dir, "merlin_upload.xlsx")
+
+    try:
+        merlin_df.to_excel(
+            output_file,
+            index=False,
+            engine="openpyxl"
+        )
+    except Exception as e:
+        raise RuntimeError(f"❌ Failed to write Merlin Excel file: {e}")
+
+    print(f"✅ Merlin output written to: {output_file}")
+
+    return output_file
+
+def prepare_merlin_payload(merlin_df):
+    """
+    Convert merlin DataFrame into API-ready JSON payload
+    """
+
+    if merlin_df.empty:
+        raise ValueError("❌ Merlin DataFrame is empty")
+
+    # Replace NaN with None for JSON compatibility
+    merlin_df = merlin_df.where(pd.notnull(merlin_df), None)
+
+    payload = merlin_df.to_dict(orient="records")
+
+    if not payload:
+        raise ValueError("❌ Payload is empty after conversion")
+
+    print(f"✅ Merlin payload prepared ({len(payload)} records)")
+
+    return payload
+
+

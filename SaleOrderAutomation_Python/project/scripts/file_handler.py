@@ -53,3 +53,44 @@ def move_files_to_input():
         print(f"📦 Moved file: {file}")
 
     return sales_order_file, customer_master_file
+
+def rename_downloaded_files(download_dir):
+    """
+    Rename DMS downloaded files to standard names
+    """
+
+    files = os.listdir(download_dir)
+
+    if not files:
+        raise FileNotFoundError("❌ No files found in download folder")
+
+    sales_file = None
+    customer_file = None
+
+    for file in files:
+        lower_name = file.lower()
+
+        if "sales" in lower_name:
+            sales_file = file
+        elif "customer" in lower_name:
+            customer_file = file
+
+    if not sales_file or not customer_file:
+        raise ValueError("❌ Could not identify Sales or Customer file")
+
+    sales_new = "sales_order.xlsx"
+    customer_new = "customer_master.xlsx"
+
+    os.rename(
+        os.path.join(download_dir, sales_file),
+        os.path.join(download_dir, sales_new)
+    )
+
+    os.rename(
+        os.path.join(download_dir, customer_file),
+        os.path.join(download_dir, customer_new)
+    )
+
+    print("✅ Downloaded files renamed successfully")
+
+    return sales_new, customer_new
