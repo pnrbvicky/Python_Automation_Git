@@ -3,6 +3,8 @@ from scripts.file_handler import move_files_to_input
 from scripts.file_handler import clear_folder, move_files_to_input,rename_downloaded_files
 from config.config import DOWNLOAD_DIR, INPUT_DIR, OUTPUT_DIR
 from scripts.merlin_api import upload_to_merlin
+from scripts.db_writer import write_merlin_to_db
+import os
 # from scripts.transform import read_excel_file,validate_mandatory_columns
 # from scripts.transform import merge_customer_city
 # from scripts.transform import add_total_price
@@ -101,6 +103,10 @@ def main():
     upload_response = upload_to_merlin(merlin_payload)
 
     print("✅ Step 7 completed – Data uploaded to Merlin")
+
+    db_path = os.path.join(OUTPUT_DIR, "merlin.db")
+
+    write_merlin_to_db(merlin_df, db_path)
     # Step 4 → transform
     # Step 5 → API upload
     # Step 6 → email
