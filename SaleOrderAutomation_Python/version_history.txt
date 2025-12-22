@@ -1,3 +1,4 @@
 1. Upto payload ready for api upload --- 20_12_2025
 2. updated merlin api upload and merlin api setup -- 20_12_2025
 3.updated db - sqllite -21_12_2025
+4. DB(pending)---api------db (status and error) updated -22_12_2025

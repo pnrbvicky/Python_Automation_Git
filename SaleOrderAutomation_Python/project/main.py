@@ -2,8 +2,9 @@ from scripts.dms_download import download_from_dms
 from scripts.file_handler import move_files_to_input
 from scripts.file_handler import clear_folder, move_files_to_input,rename_downloaded_files
 from config.config import DOWNLOAD_DIR, INPUT_DIR, OUTPUT_DIR
-from scripts.merlin_api import upload_to_merlin
+# from scripts.merlin_api import upload_to_merlin
 from scripts.db_writer import write_merlin_to_db
+from scripts.merlin_uploader import process_pending_merlin_records
 import os
 # from scripts.transform import read_excel_file,validate_mandatory_columns
 # from scripts.transform import merge_customer_city
@@ -100,13 +101,16 @@ def main():
     print("✅ Step 5 completed – Payload ready for API upload")
     print(merlin_payload)
 
-    upload_response = upload_to_merlin(merlin_payload)
+    # upload_response = upload_to_merlin(merlin_payload)
 
     print("✅ Step 7 completed – Data uploaded to Merlin")
 
     db_path = os.path.join(OUTPUT_DIR, "merlin.db")
-
-    write_merlin_to_db(merlin_df, db_path)
+    print("checking1")
+    write_merlin_to_db(merlin_df, db_path)    
+    print("✅ Data written to DB (PENDING)")
+    process_pending_merlin_records(db_path)
+    print("✅ Step 7 completed – DB → API → DB status updated")
     # Step 4 → transform
     # Step 5 → API upload
     # Step 6 → email
