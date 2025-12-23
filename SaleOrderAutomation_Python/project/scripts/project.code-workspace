@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../dummy_dms"
+		},
+		{
+			"path": "../../dummy_merlin_portal"
+		}
+	],
+	"settings": {}
+}

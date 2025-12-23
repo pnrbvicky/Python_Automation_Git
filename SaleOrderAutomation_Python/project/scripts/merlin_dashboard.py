@@ -52,19 +52,26 @@ import sqlite3
 import pandas as pd
 import streamlit as st
 import os
+from streamlit_autorefresh import st_autorefresh
 
 # ---------------- CONFIG ----------------
 # DB_PATH = r"G:\SaleOrderAutomation_Python\project\output\merlin.db"
 
 st.set_page_config(page_title="Merlin Orders Dashboard", layout="wide")
+
 st.title("📊 Merlin Orders Dashboard")
+# 🔄 Auto refresh every 5 seconds
+st_autorefresh(interval=5000, key="merlin_refresh")
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DB_PATH = os.path.join(BASE_DIR, "output", "merlin.db")
 
 # ---------------- LOAD DATA ----------------
-@st.cache_data
+
 def load_data():
+    if not os.path.exists(DB_PATH):
+        return pd.DataFrame()
+
     conn = sqlite3.connect(DB_PATH)
     df = pd.read_sql("SELECT * FROM merlin_sales", conn)
     conn.close()
