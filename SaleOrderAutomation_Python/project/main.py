@@ -106,7 +106,7 @@ def main():
     print("✅ Step 7 completed – Data uploaded to Merlin")
 
     db_path = os.path.join(OUTPUT_DIR, "merlin.db")
-    print("checking1")
+ 
     write_merlin_to_db(merlin_df, db_path)    
     print("✅ Data written to DB (PENDING)")
     process_pending_merlin_records(db_path)
