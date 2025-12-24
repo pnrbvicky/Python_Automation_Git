@@ -4,3 +4,13 @@
 4. DB(pending)---api------db (status and error) updated -22_12_2025
 5. till dashboard ____23_12_2025
 6. till dashboard_auto_refresh_23_12_2025
+
+------------------------------------
+1.G:\SaleOrderAutomation_Python\dummy_dms> python run_dms.py
+2.G:\SaleOrderAutomation_Python\dummy_merlin_portal> python dummy_merlin_api.py
+3.G:\SaleOrderAutomation_Python\project> python main.py
+
+
+
+4.streamlit run project/scripts/merlin_dashboard.py
+
