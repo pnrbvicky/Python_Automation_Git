@@ -32,7 +32,7 @@ SMTP_SERVER = "smtp.mail.yahoo.com"
 SMTP_PORT = 587
 
 SENDER_EMAIL = "pnrbvicky@yahoo.in"
-APP_PASSWORD = "rdwmoqexfrrewhap"   # Yahoo app password
+APP_PASSWORD = ""   # Yahoo app password
 
 RECIPIENTS = [
     "pnrbvicky@gmail.com"

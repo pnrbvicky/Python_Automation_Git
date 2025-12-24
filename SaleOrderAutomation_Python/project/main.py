@@ -148,40 +148,31 @@ def main():
     process_pending_merlin_records(db_path)
     print("Step 12 completed – DB API DB status updated")
     logger.info("Step 12 completed – DB API DB status updated")
-    # #email:
-    try:
-        print("Email bot started")
-        logger.info("Email bot started")
+    # # #email:
+    # try:
+    #     print("Email bot started")
+    #     logger.info("Email bot started")
         
-        subject, body = success_mail()
-        send_execution_mail(
-            subject,
-            body,
-            attachments=[
-                "input/sales_order.xlsx",
-                "input/customer_master.xlsx",
-                "output/automation.log"
-            ]
+    #     subject, body = success_mail()
+    #     send_execution_mail(
+    #         subject,
+    #         body,
+    #         attachments=[
+    #             "input/sales_order.xlsx",
+    #             "input/customer_master.xlsx",
+    #             "output/automation.log"
+    #         ]
             
-        )
+    #     )
 
-    except Exception as e:
-        subject, body = failure_mail(str(e))
-        send_execution_mail(
-            subject,
-            body,
-            attachments=["output/automation.log"]
-        )
-        raise
-    # total_orders = len(merlin_df)
-    # success_orders = len(merlin_df[merlin_df["status"] == "SUCCESS"])
-    # failed_orders = len(merlin_df[merlin_df["status"] == "FAILED"])
+    # except Exception as e:
+    #     subject, body = failure_mail(str(e))
+    #     send_execution_mail(
+    #         subject,
+    #         body,
+    #         attachments=["output/automation.log"]
+    #     )
+    #     raise
     
-
-    
-    # Step 4 → transform
-    # Step 5 → API upload
-    # Step 6 → email
-
 if __name__ == "__main__":
     main()
