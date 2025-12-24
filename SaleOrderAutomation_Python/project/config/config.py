@@ -22,7 +22,18 @@ LOG_DIR = os.path.join(BASE_DIR, "logs")
 MERLIN_API_URL = "http://127.0.0.1:6000/upload"
 
 # Email
-SMTP_SERVER = "smtp.gmail.com"
+# SMTP_SERVER = "smtp.gmail.com"
+# SMTP_PORT = 587
+# EMAIL_FROM = "bot@company.com"
+# EMAIL_TO = ["ops@company.com"]
+
+#SMTP_SERVER = "smtp.gmail.com"
+SMTP_SERVER = "smtp.mail.yahoo.com"
 SMTP_PORT = 587
-EMAIL_FROM = "bot@company.com"
-EMAIL_TO = ["ops@company.com"]
+
+SENDER_EMAIL = "pnrbvicky@yahoo.in"
+APP_PASSWORD = "rdwmoqexfrrewhap"   # Yahoo app password
+
+RECIPIENTS = [
+    "pnrbvicky@gmail.com"
+]

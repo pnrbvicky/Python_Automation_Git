@@ -14,3 +14,12 @@
 
 4.streamlit run project/scripts/merlin_dashboard.py
 
+python dummy_dms\run_dms.py
+
+python dummy_merlin_portal\dummy_merlin_api.py
+
+python project\main.py
+
+
+
+

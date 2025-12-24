@@ -7,6 +7,9 @@ from scripts.db_writer import write_merlin_to_db
 from scripts.merlin_uploader import process_pending_merlin_records
 import os
 from scripts.logger import setup_logger
+from scripts.email_notifier import send_execution_mail
+from scripts.email_templates import success_mail, failure_mail
+
 # from scripts.transform import read_excel_file,validate_mandatory_columns
 # from scripts.transform import merge_customer_city
 # from scripts.transform import add_total_price
@@ -143,8 +146,39 @@ def main():
     print("Data written to DB (PENDING)")
     logger.info("Data written to DB (PENDING)")
     process_pending_merlin_records(db_path)
-    print("Step 12 completed – DB → API → DB status updated")
-    logger.info("Step 12 completed – DB → API → DB status updated")
+    print("Step 12 completed – DB API DB status updated")
+    logger.info("Step 12 completed – DB API DB status updated")
+    # #email:
+    try:
+        print("Email bot started")
+        logger.info("Email bot started")
+        
+        subject, body = success_mail()
+        send_execution_mail(
+            subject,
+            body,
+            attachments=[
+                "input/sales_order.xlsx",
+                "input/customer_master.xlsx",
+                "output/automation.log"
+            ]
+            
+        )
+
+    except Exception as e:
+        subject, body = failure_mail(str(e))
+        send_execution_mail(
+            subject,
+            body,
+            attachments=["output/automation.log"]
+        )
+        raise
+    # total_orders = len(merlin_df)
+    # success_orders = len(merlin_df[merlin_df["status"] == "SUCCESS"])
+    # failed_orders = len(merlin_df[merlin_df["status"] == "FAILED"])
+    
+
+    
     # Step 4 → transform
     # Step 5 → API upload
     # Step 6 → email

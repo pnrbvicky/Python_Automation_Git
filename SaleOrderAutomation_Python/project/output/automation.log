@@ -30,3 +30,217 @@
 2025-12-24 10:54:18,422 | INFO | __main__ | Step 9 completed – Merlin Excel ready
 2025-12-24 10:54:18,436 | INFO | __main__ | Step 11 completed – Data uploaded to Merlin
 2025-12-24 10:54:18,529 | INFO | __main__ | Data written to DB (PENDING)
+2025-12-24 12:49:24,421 | INFO | __main__ | Automation Started
+2025-12-24 12:49:24,668 | INFO | __main__ | cleared download and input folders
+2025-12-24 12:49:24,669 | INFO | __main__ | Created folder if not exist for input,output,download path
+2025-12-24 12:49:24,669 | INFO | __main__ | Step 1 completed
+2025-12-24 12:50:05,895 | INFO | __main__ | Step 2 completed
+2025-12-24 12:50:05,896 | INFO | __main__ | Raw files are renamed
+2025-12-24 12:50:05,899 | INFO | __main__ | files are moved to input folder
+2025-12-24 12:50:05,900 | INFO | __main__ | Step 3 completed
+2025-12-24 12:50:11,115 | INFO | __main__ | sales and customer master files read
+2025-12-24 12:50:11,116 | INFO | __main__ | Step 4 completed – Files validated and loaded
+2025-12-24 12:50:11,613 | INFO | __main__ | Step 5 completed – merged sales and customer report
+2025-12-24 12:50:11,616 | INFO | __main__ | Step 6 completed – created_total_priceColumn
+2025-12-24 12:50:11,680 | INFO | __main__ | Step 7 completed – mapped merlin columns
+2025-12-24 12:50:11,731 | INFO | __main__ | Step 8 completed – mapped merlin columns
+2025-12-24 12:50:11,921 | INFO | __main__ | Step 9 completed – Merlin Excel ready
+2025-12-24 12:50:11,983 | INFO | __main__ | Step 11 completed – Data uploaded to Merlin
+2025-12-24 12:50:12,364 | INFO | __main__ | Data written to DB (PENDING)
+2025-12-24 12:55:12,170 | INFO | __main__ | Automation Started
+2025-12-24 12:55:12,370 | INFO | __main__ | cleared download and input folders
+2025-12-24 12:55:12,432 | INFO | __main__ | Created folder if not exist for input,output,download path
+2025-12-24 12:55:12,432 | INFO | __main__ | Step 1 completed
+2025-12-24 12:55:46,017 | INFO | __main__ | Step 2 completed
+2025-12-24 12:55:46,017 | INFO | __main__ | Raw files are renamed
+2025-12-24 12:55:46,030 | INFO | __main__ | files are moved to input folder
+2025-12-24 12:55:46,050 | INFO | __main__ | Step 3 completed
+2025-12-24 12:55:55,407 | INFO | __main__ | sales and customer master files read
+2025-12-24 12:55:55,408 | INFO | __main__ | Step 4 completed – Files validated and loaded
+2025-12-24 12:55:55,860 | INFO | __main__ | Step 5 completed – merged sales and customer report
+2025-12-24 12:55:55,863 | INFO | __main__ | Step 6 completed – created_total_priceColumn
+2025-12-24 12:55:55,949 | INFO | __main__ | Step 7 completed – mapped merlin columns
+2025-12-24 12:55:56,017 | INFO | __main__ | Step 8 completed – mapped merlin columns
+2025-12-24 12:55:56,198 | INFO | __main__ | Step 9 completed – Merlin Excel ready
+2025-12-24 12:55:56,307 | INFO | __main__ | Step 11 completed – Data uploaded to Merlin
+2025-12-24 12:55:56,550 | INFO | __main__ | Data written to DB (PENDING)
+2025-12-24 12:58:29,077 | INFO | __main__ | Automation Started
+2025-12-24 12:58:29,086 | INFO | __main__ | cleared download and input folders
+2025-12-24 12:58:29,088 | INFO | __main__ | Created folder if not exist for input,output,download path
+2025-12-24 12:58:29,089 | INFO | __main__ | Step 1 completed
+2025-12-24 12:59:03,659 | INFO | __main__ | Step 2 completed
+2025-12-24 12:59:03,659 | INFO | __main__ | Raw files are renamed
+2025-12-24 12:59:03,662 | INFO | __main__ | files are moved to input folder
+2025-12-24 12:59:03,666 | INFO | __main__ | Step 3 completed
+2025-12-24 12:59:06,470 | INFO | __main__ | sales and customer master files read
+2025-12-24 12:59:06,471 | INFO | __main__ | Step 4 completed – Files validated and loaded
+2025-12-24 12:59:06,910 | INFO | __main__ | Step 5 completed – merged sales and customer report
+2025-12-24 12:59:06,916 | INFO | __main__ | Step 6 completed – created_total_priceColumn
+2025-12-24 12:59:06,985 | INFO | __main__ | Step 7 completed – mapped merlin columns
+2025-12-24 12:59:07,059 | INFO | __main__ | Step 8 completed – mapped merlin columns
+2025-12-24 12:59:07,281 | INFO | __main__ | Step 9 completed – Merlin Excel ready
+2025-12-24 12:59:07,351 | INFO | __main__ | Step 11 completed – Data uploaded to Merlin
+2025-12-24 12:59:07,568 | INFO | __main__ | Data written to DB (PENDING)
+2025-12-24 13:02:06,071 | INFO | __main__ | Automation Started
+2025-12-24 13:02:06,081 | INFO | __main__ | cleared download and input folders
+2025-12-24 13:02:06,086 | INFO | __main__ | Created folder if not exist for input,output,download path
+2025-12-24 13:02:06,086 | INFO | __main__ | Step 1 completed
+2025-12-24 13:02:29,099 | INFO | __main__ | Step 2 completed
+2025-12-24 13:02:29,100 | INFO | __main__ | Raw files are renamed
+2025-12-24 13:02:29,105 | INFO | __main__ | files are moved to input folder
+2025-12-24 13:02:29,107 | INFO | __main__ | Step 3 completed
+2025-12-24 13:02:30,680 | INFO | __main__ | sales and customer master files read
+2025-12-24 13:02:30,680 | INFO | __main__ | Step 4 completed – Files validated and loaded
+2025-12-24 13:02:31,279 | INFO | __main__ | Step 5 completed – merged sales and customer report
+2025-12-24 13:02:31,301 | INFO | __main__ | Step 6 completed – created_total_priceColumn
+2025-12-24 13:02:31,361 | INFO | __main__ | Step 7 completed – mapped merlin columns
+2025-12-24 13:02:31,433 | INFO | __main__ | Step 8 completed – mapped merlin columns
+2025-12-24 13:02:31,606 | INFO | __main__ | Step 9 completed – Merlin Excel ready
+2025-12-24 13:02:31,627 | INFO | __main__ | Step 11 completed – Data uploaded to Merlin
+2025-12-24 13:03:25,363 | INFO | __main__ | Data written to DB (PENDING)
+2025-12-24 18:37:06,152 | INFO | __main__ | Automation Started
+2025-12-24 18:37:06,211 | INFO | __main__ | cleared download and input folders
+2025-12-24 18:37:06,213 | INFO | __main__ | Created folder if not exist for input,output,download path
+2025-12-24 18:37:06,214 | INFO | __main__ | Step 1 completed
+2025-12-24 18:37:39,932 | INFO | __main__ | Step 2 completed
+2025-12-24 18:37:39,933 | INFO | __main__ | Raw files are renamed
+2025-12-24 18:37:39,941 | INFO | __main__ | files are moved to input folder
+2025-12-24 18:37:39,948 | INFO | __main__ | Step 3 completed
+2025-12-24 18:37:43,017 | INFO | __main__ | sales and customer master files read
+2025-12-24 18:37:43,017 | INFO | __main__ | Step 4 completed – Files validated and loaded
+2025-12-24 18:37:43,364 | INFO | __main__ | Step 5 completed – merged sales and customer report
+2025-12-24 18:37:43,367 | INFO | __main__ | Step 6 completed – created_total_priceColumn
+2025-12-24 18:37:43,414 | INFO | __main__ | Step 7 completed – mapped merlin columns
+2025-12-24 18:37:43,434 | INFO | __main__ | Step 8 completed – mapped merlin columns
+2025-12-24 18:37:43,497 | INFO | __main__ | Step 9 completed – Merlin Excel ready
+2025-12-24 18:37:43,553 | INFO | __main__ | Step 11 completed – Data uploaded to Merlin
+2025-12-24 18:37:44,076 | INFO | __main__ | Data written to DB (PENDING)
+2025-12-24 18:37:44,781 | INFO | __main__ | Email bot started
+2025-12-24 18:42:35,159 | INFO | __main__ | Automation Started
+2025-12-24 18:42:35,163 | INFO | __main__ | cleared download and input folders
+2025-12-24 18:42:35,164 | INFO | __main__ | Created folder if not exist for input,output,download path
+2025-12-24 18:42:35,165 | INFO | __main__ | Step 1 completed
+2025-12-24 18:42:54,305 | INFO | __main__ | Step 2 completed
+2025-12-24 18:42:54,306 | INFO | __main__ | Raw files are renamed
+2025-12-24 18:42:54,309 | INFO | __main__ | files are moved to input folder
+2025-12-24 18:42:54,311 | INFO | __main__ | Step 3 completed
+2025-12-24 18:42:54,809 | INFO | __main__ | sales and customer master files read
+2025-12-24 18:42:54,810 | INFO | __main__ | Step 4 completed – Files validated and loaded
+2025-12-24 18:42:54,859 | INFO | __main__ | Step 5 completed – merged sales and customer report
+2025-12-24 18:42:54,871 | INFO | __main__ | Step 6 completed – created_total_priceColumn
+2025-12-24 18:42:54,891 | INFO | __main__ | Step 7 completed – mapped merlin columns
+2025-12-24 18:42:54,924 | INFO | __main__ | Step 8 completed – mapped merlin columns
+2025-12-24 18:42:54,965 | INFO | __main__ | Step 9 completed – Merlin Excel ready
+2025-12-24 18:42:54,980 | INFO | __main__ | Step 11 completed – Data uploaded to Merlin
+2025-12-24 18:42:55,229 | INFO | __main__ | Data written to DB (PENDING)
+2025-12-24 18:42:55,580 | INFO | __main__ | Email bot started
+2025-12-24 18:44:46,851 | INFO | __main__ | Automation Started
+2025-12-24 18:44:46,855 | INFO | __main__ | cleared download and input folders
+2025-12-24 18:44:46,856 | INFO | __main__ | Created folder if not exist for input,output,download path
+2025-12-24 18:44:46,857 | INFO | __main__ | Step 1 completed
+2025-12-24 18:45:05,230 | INFO | __main__ | Step 2 completed
+2025-12-24 18:45:05,231 | INFO | __main__ | Raw files are renamed
+2025-12-24 18:45:05,238 | INFO | __main__ | files are moved to input folder
+2025-12-24 18:45:05,241 | INFO | __main__ | Step 3 completed
+2025-12-24 18:45:05,769 | INFO | __main__ | sales and customer master files read
+2025-12-24 18:45:05,769 | INFO | __main__ | Step 4 completed – Files validated and loaded
+2025-12-24 18:45:05,818 | INFO | __main__ | Step 5 completed – merged sales and customer report
+2025-12-24 18:45:05,820 | INFO | __main__ | Step 6 completed – created_total_priceColumn
+2025-12-24 18:45:05,846 | INFO | __main__ | Step 7 completed – mapped merlin columns
+2025-12-24 18:45:05,869 | INFO | __main__ | Step 8 completed – mapped merlin columns
+2025-12-24 18:45:05,912 | INFO | __main__ | Step 9 completed – Merlin Excel ready
+2025-12-24 18:45:05,921 | INFO | __main__ | Step 11 completed – Data uploaded to Merlin
+2025-12-24 18:45:06,113 | INFO | __main__ | Data written to DB (PENDING)
+2025-12-24 18:45:06,499 | INFO | __main__ | Email bot started
+2025-12-24 18:48:23,713 | INFO | __main__ | Automation Started
+2025-12-24 18:48:23,717 | INFO | __main__ | cleared download and input folders
+2025-12-24 18:48:23,719 | INFO | __main__ | Created folder if not exist for input,output,download path
+2025-12-24 18:48:23,719 | INFO | __main__ | Step 1 completed
+2025-12-24 18:48:42,010 | INFO | __main__ | Step 2 completed
+2025-12-24 18:48:42,012 | INFO | __main__ | Raw files are renamed
+2025-12-24 18:48:42,020 | INFO | __main__ | files are moved to input folder
+2025-12-24 18:48:42,024 | INFO | __main__ | Step 3 completed
+2025-12-24 18:48:42,550 | INFO | __main__ | sales and customer master files read
+2025-12-24 18:48:42,550 | INFO | __main__ | Step 4 completed – Files validated and loaded
+2025-12-24 18:48:42,596 | INFO | __main__ | Step 5 completed – merged sales and customer report
+2025-12-24 18:48:42,602 | INFO | __main__ | Step 6 completed – created_total_priceColumn
+2025-12-24 18:48:42,633 | INFO | __main__ | Step 7 completed – mapped merlin columns
+2025-12-24 18:48:42,656 | INFO | __main__ | Step 8 completed – mapped merlin columns
+2025-12-24 18:48:42,706 | INFO | __main__ | Step 9 completed – Merlin Excel ready
+2025-12-24 18:48:42,719 | INFO | __main__ | Step 11 completed – Data uploaded to Merlin
+2025-12-24 18:48:43,244 | INFO | __main__ | Data written to DB (PENDING)
+2025-12-24 18:48:43,694 | INFO | __main__ | Email bot started
+2025-12-24 19:13:33,789 | INFO | __main__ | Automation Started
+2025-12-24 19:13:33,796 | INFO | __main__ | cleared download and input folders
+2025-12-24 19:13:33,798 | INFO | __main__ | Created folder if not exist for input,output,download path
+2025-12-24 19:13:33,798 | INFO | __main__ | Step 1 completed
+2025-12-24 19:13:55,995 | INFO | __main__ | Step 2 completed
+2025-12-24 19:13:55,996 | INFO | __main__ | Raw files are renamed
+2025-12-24 19:13:56,003 | INFO | __main__ | files are moved to input folder
+2025-12-24 19:13:56,006 | INFO | __main__ | Step 3 completed
+2025-12-24 19:13:56,558 | INFO | __main__ | sales and customer master files read
+2025-12-24 19:13:56,558 | INFO | __main__ | Step 4 completed – Files validated and loaded
+2025-12-24 19:13:56,616 | INFO | __main__ | Step 5 completed – merged sales and customer report
+2025-12-24 19:13:56,619 | INFO | __main__ | Step 6 completed – created_total_priceColumn
+2025-12-24 19:13:56,641 | INFO | __main__ | Step 7 completed – mapped merlin columns
+2025-12-24 19:13:56,663 | INFO | __main__ | Step 8 completed – mapped merlin columns
+2025-12-24 19:13:56,703 | INFO | __main__ | Step 9 completed – Merlin Excel ready
+2025-12-24 19:13:56,716 | INFO | __main__ | Step 11 completed – Data uploaded to Merlin
+2025-12-24 19:13:56,896 | INFO | __main__ | Data written to DB (PENDING)
+2025-12-24 19:13:57,228 | INFO | __main__ | Email bot started
+2025-12-24 19:27:59,181 | INFO | __main__ | Automation Started
+2025-12-24 19:27:59,188 | INFO | __main__ | cleared download and input folders
+2025-12-24 19:27:59,190 | INFO | __main__ | Created folder if not exist for input,output,download path
+2025-12-24 19:27:59,190 | INFO | __main__ | Step 1 completed
+2025-12-24 19:28:22,966 | INFO | __main__ | Step 2 completed
+2025-12-24 19:28:22,967 | INFO | __main__ | Raw files are renamed
+2025-12-24 19:28:22,975 | INFO | __main__ | files are moved to input folder
+2025-12-24 19:28:22,979 | INFO | __main__ | Step 3 completed
+2025-12-24 19:28:23,517 | INFO | __main__ | sales and customer master files read
+2025-12-24 19:28:23,517 | INFO | __main__ | Step 4 completed – Files validated and loaded
+2025-12-24 19:28:23,560 | INFO | __main__ | Step 5 completed – merged sales and customer report
+2025-12-24 19:28:23,563 | INFO | __main__ | Step 6 completed – created_total_priceColumn
+2025-12-24 19:28:23,589 | INFO | __main__ | Step 7 completed – mapped merlin columns
+2025-12-24 19:28:23,611 | INFO | __main__ | Step 8 completed – mapped merlin columns
+2025-12-24 19:28:23,656 | INFO | __main__ | Step 9 completed – Merlin Excel ready
+2025-12-24 19:28:23,668 | INFO | __main__ | Step 11 completed – Data uploaded to Merlin
+2025-12-24 19:28:23,938 | INFO | __main__ | Data written to DB (PENDING)
+2025-12-24 19:28:24,360 | INFO | __main__ | Step 12 completed – DB API DB status updated
+2025-12-24 19:28:24,361 | INFO | __main__ | Email bot started
+2025-12-24 19:29:14,333 | INFO | __main__ | Automation Started
+2025-12-24 19:29:14,338 | INFO | __main__ | cleared download and input folders
+2025-12-24 19:29:14,340 | INFO | __main__ | Created folder if not exist for input,output,download path
+2025-12-24 19:29:14,341 | INFO | __main__ | Step 1 completed
+2025-12-24 19:29:32,588 | INFO | __main__ | Step 2 completed
+2025-12-24 19:29:32,589 | INFO | __main__ | Raw files are renamed
+2025-12-24 19:29:32,598 | INFO | __main__ | files are moved to input folder
+2025-12-24 19:29:32,601 | INFO | __main__ | Step 3 completed
+2025-12-24 19:29:33,184 | INFO | __main__ | sales and customer master files read
+2025-12-24 19:29:33,184 | INFO | __main__ | Step 4 completed – Files validated and loaded
+2025-12-24 19:29:33,238 | INFO | __main__ | Step 5 completed – merged sales and customer report
+2025-12-24 19:29:33,241 | INFO | __main__ | Step 6 completed – created_total_priceColumn
+2025-12-24 19:29:33,267 | INFO | __main__ | Step 7 completed – mapped merlin columns
+2025-12-24 19:29:33,294 | INFO | __main__ | Step 8 completed – mapped merlin columns
+2025-12-24 19:29:33,328 | INFO | __main__ | Step 9 completed – Merlin Excel ready
+2025-12-24 19:29:33,338 | INFO | __main__ | Step 11 completed – Data uploaded to Merlin
+2025-12-24 19:29:33,700 | INFO | __main__ | Data written to DB (PENDING)
+2025-12-24 19:29:34,250 | INFO | __main__ | Step 12 completed – DB API DB status updated
+2025-12-24 20:26:29,130 | INFO | __main__ | Automation Started
+2025-12-24 20:26:29,137 | INFO | __main__ | cleared download and input folders
+2025-12-24 20:26:29,139 | INFO | __main__ | Created folder if not exist for input,output,download path
+2025-12-24 20:26:29,140 | INFO | __main__ | Step 1 completed
+2025-12-24 20:26:49,012 | INFO | __main__ | Step 2 completed
+2025-12-24 20:26:49,013 | INFO | __main__ | Raw files are renamed
+2025-12-24 20:26:49,022 | INFO | __main__ | files are moved to input folder
+2025-12-24 20:26:49,025 | INFO | __main__ | Step 3 completed
+2025-12-24 20:26:49,739 | INFO | __main__ | sales and customer master files read
+2025-12-24 20:26:49,739 | INFO | __main__ | Step 4 completed – Files validated and loaded
+2025-12-24 20:26:49,793 | INFO | __main__ | Step 5 completed – merged sales and customer report
+2025-12-24 20:26:49,796 | INFO | __main__ | Step 6 completed – created_total_priceColumn
+2025-12-24 20:26:49,816 | INFO | __main__ | Step 7 completed – mapped merlin columns
+2025-12-24 20:26:49,840 | INFO | __main__ | Step 8 completed – mapped merlin columns
+2025-12-24 20:26:49,879 | INFO | __main__ | Step 9 completed – Merlin Excel ready
+2025-12-24 20:26:49,890 | INFO | __main__ | Step 11 completed – Data uploaded to Merlin
+2025-12-24 20:26:50,154 | INFO | __main__ | Data written to DB (PENDING)
+2025-12-24 20:26:50,760 | INFO | __main__ | Step 12 completed – DB API DB status updated
+2025-12-24 20:26:50,760 | INFO | __main__ | Email bot started
